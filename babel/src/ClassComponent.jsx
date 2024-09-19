@@ -10,8 +10,8 @@ class ClassComponent extends Component {
 
         return (
             <div className="class-components">
-                {usuarios.map(item => (
-                    <p>{item}</p>
+                {usuarios.map((item, index) => (
+                    <p key={`${item}_${index}`}>{item}</p>
                 ))}
             </div>
         )
