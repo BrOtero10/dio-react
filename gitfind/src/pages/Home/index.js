@@ -48,7 +48,7 @@ function App() {
               <img src={currentUser.avatar_url} alt="Imagem de perfil" className="profile" />
               <div>
                 <h3 onClick={handleOnClickUsername}>{currentUser.name}</h3>
-                <span>{currentUser.login}</span>
+                <span>@{currentUser.login}</span>
                 <p>{currentUser.bio}</p>
               </div>
             </div>
